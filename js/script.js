@@ -56,9 +56,9 @@ const generateGreeting = () => {
   const date = new Date();
   const hrs = date.getHours();
   let greet;
-  if (hrs < 12) greet = "Good Morning";
-  else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
-  else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
+  if (hrs < 12) greet = "Good Morning 😀";
+  else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon 😎";
+  else if (hrs >= 17 && hrs <= 24) greet = "Good Evening 🥸";
   return greet;
 };
 
@@ -111,7 +111,7 @@ const initializeSingleProduct = () => {
     details.innerHTML = `
       <h1 class="single-product-content__details-title">${product.name}</h1>
       <p class="single-product-content__details-price">${product.price}</p>
-      <p class="single-product-content__details-description">No description</p>
+      <p class="single-product-content__details-description">Sorry 😔, this product is not available in your region. Try windows for better experience.</p>
     `;
     singleProductContainer.appendChild(thumbnail);
     singleProductContainer.appendChild(details);

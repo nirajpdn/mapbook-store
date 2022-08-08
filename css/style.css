@@ -222,6 +222,7 @@ button:hover::before {
   font-size: 1.1rem;
   margin-top: 1rem;
   color: gray;
+  line-height: 1.8rem;
 }
 
 /* Media Query */
