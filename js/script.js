@@ -22,7 +22,7 @@ const products = [
   },
 ];
 
-const rootElement = document.querySelector(".root");
+const mainElement = document.querySelector(".main");
 const breadCrumbContainer = document.querySelector(".breadcrumb-container");
 const greetingEl = document.querySelector("#greeting");
 const productGridContainer = document.querySelector(".product-content__grid");
@@ -32,13 +32,19 @@ const singleProductContainer = document.querySelector(
 
 const navElement = `
 <nav>
-<div class="nav-container nav-wrapper">
+<div class="nav-container">
 <h2 class="nav-brand">Laptop Store</h2>
 </div> 
 </nav>
 `;
+const footerElement = `
+<footer>
+  <p class="footer-text">&copy;${new Date().getFullYear()}, Mapbook Store</p>
+</footer>
+`;
 
-rootElement.insertAdjacentHTML("beforebegin", navElement);
+mainElement.insertAdjacentHTML("beforebegin", navElement);
+mainElement.insertAdjacentHTML("afterend", footerElement);
 
 // if current location pathname is /product/map-book-air-m2 then pathnameList = ["","product","map-book-air-m2"]
 const pathnameList = window.location.pathname.split("/");

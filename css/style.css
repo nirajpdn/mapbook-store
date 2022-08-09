@@ -23,19 +23,20 @@ body {
 a {
   text-decoration: none;
 }
-.root,
-.nav-container {
-  max-width: 75rem;
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0 auto;
+  max-width: 75rem;
 }
-.main-container,
-.nav-wrapper {
+.main,
+.nav-container {
   padding: 0 3rem;
 }
-.main-container {
-  margin: 3rem 0;
+.main {
+  padding-top: 2rem;
 }
-
 nav {
   padding: 1rem 0;
   background-color: rgba(255, 255, 255, 1);
@@ -47,6 +48,14 @@ nav {
 .nav-brand {
   font-family: "Oleo Script Swash Caps", cursive;
   color: var(--primary);
+}
+footer {
+  padding: 2rem 3rem;
+  margin-top: auto;
+}
+footer > .footer-text {
+  text-align: center;
+  margin-top: auto;
 }
 ul {
   list-style: none;
@@ -191,7 +200,7 @@ button:hover::before {
 }
 .single-product-content > .single-product-content__thumnbnail {
   width: 30rem;
-  height: 30rem;
+  height: 20rem;
   position: relative;
   overflow: hidden;
 }
