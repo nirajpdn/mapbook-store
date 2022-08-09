@@ -7,7 +7,7 @@ const products = [
     url: "/product/map-book-air-m6.html",
   },
   {
-    id: 1,
+    id: 2,
     name: "Mapbook Pro M5",
     image: "/images/mapbook-pro.jpg",
     price: "Rs.348,145",
