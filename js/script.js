@@ -13,6 +13,13 @@ const products = [
     price: "Rs.348,145",
     url: "/product/map-book-pro-m5-chip.html",
   },
+  {
+    id: 3,
+    name: "Mapbook Fire",
+    image: "/images/mapbook-fire.jpg",
+    price: "Rs.548,145",
+    url: "/product/map-book-fire.html",
+  },
 ];
 
 const rootElement = document.querySelector(".root");
